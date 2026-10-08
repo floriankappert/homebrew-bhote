@@ -1,7 +1,7 @@
 class Bhote < Formula
   desc "Topics and agents side panel for the herdr terminal workspace manager"
   homepage "https://github.com/floriankappert/bhote"
-  url "https://github.com/floriankappert/bhote.git", tag: "v0.5.0"
+  url "https://github.com/floriankappert/bhote.git", tag: "v0.5.2"
   license "MIT"
   head "https://github.com/floriankappert/bhote.git", branch: "main"
 
@@ -19,6 +19,10 @@ class Bhote < Formula
     <<~EOS
       To open the panel automatically next to your agents when herdr starts:
         herdr plugin link #{opt_pkgshare}/herdr-plugin
+
+      Let Claude Code do the rest of the setup (plugins, hooks, machines, monitors):
+        bhote skills install
+        then, in Claude Code: /bhote-install
     EOS
   end
 

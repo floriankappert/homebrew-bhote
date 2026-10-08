@@ -4,7 +4,10 @@ Homebrew tap for [bhote](https://github.com/floriankappert/bhote), the topics an
 
 ```sh
 brew install floriankappert/bhote/bhote
+bhote skills install        # the Claude Code skills bhote and bhote-install
 ```
+
+Then, in Claude Code: `/bhote-install` sets up the rest (herdr plugin, hooks, machines, monitors).
 
 To open the panel next to your agents when herdr starts:
 
